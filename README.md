@@ -50,16 +50,17 @@ Run scripts with `-s` flag
 
    'import/no-unresolved': [2, { ignore: ['^components/', '^containers/', '^services/', '^layouts/'] }]
    ```
-2. Chai and `no-unused-expressions`
+2. Chai and `no-unused-expressions`   
    Eslint will report errors if you use syntax: `expect(foo).to.be.true`.  
    Disable it by adding:  
    ```js  
     "no-unused-expressions": 0,
    ```
-   if you have unit tests in a separate folder e.g `test/` you can create a nested config.
+   If you have unit tests in a separate folder e.g `test/` you can create a nested config.  
    Example:
-   create `test/.eslintrc` and extend the base config. 
+   Create `test/.eslintrc` and extend the base config.   
    ```js
+
    {
      "extends" : "../.eslintrc",
      "env"     : {
