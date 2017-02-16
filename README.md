@@ -54,10 +54,10 @@ Run scripts with `-s` flag
    Eslint will report errors if you use syntax: `expect(foo).to.be.true`.  
    Disable it by adding:  
    ```js  
-    "no-unused-expressions": 0,
+    "no-unused-expressions": 0
    ```
    If you have unit tests in a separate folder e.g `test/` you can create a nested config.  
-   Example:
+   Example:  
    Create `test/.eslintrc` and extend the base config.   
    ```js
 
