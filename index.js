@@ -21,7 +21,6 @@ module.exports = {
     'react',
   ],
   extends: [
-    './rules/babel',
     './rules/best-practices',
     './rules/errors',
     './rules/es6',
@@ -33,6 +32,7 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
+    './rules/babel',
   ].map(require.resolve),
   rules: {
     'no-param-reassign': 'error',
